@@ -21,4 +21,11 @@ public class Node {
             return leftOperand.value - rightOperand.value;
         return value;
     }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "value=" + value +
+                '}';
+    }
 }
