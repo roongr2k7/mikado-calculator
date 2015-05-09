@@ -24,9 +24,7 @@ public class Node {
 
     @Override
     public String toString() {
-        if (operator == "+")
-            return leftOperand.value + " " + operator + " " + rightOperand.value;
-        if (operator == "-")
+        if (operator != null)
             return leftOperand.value + " " + operator + " " + rightOperand.value;
         return value + "";
     }
