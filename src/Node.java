@@ -18,7 +18,7 @@ public class Node {
         if (operator == "+")
             return leftOperand.value + rightOperand.value;
         else if (operator == "-")
-            return 1;
+            return leftOperand.value - rightOperand.value;
         return value;
     }
 }
