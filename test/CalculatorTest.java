@@ -25,4 +25,9 @@ public class CalculatorTest {
     public void stringValueNode() {
         assertEquals("1", new Node(1).toString());
     }
+
+    @Test
+    public void stringEquation() {
+        assertEquals("1 + 1", new Node("+", new Node(1), new Node(1)).toString());
+    }
 }
