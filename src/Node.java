@@ -26,6 +26,8 @@ public class Node {
     public String toString() {
         if (operator == "+")
             return leftOperand.value + " + " + rightOperand.value;
+        if (operator == "-")
+            return leftOperand.value + " - " + rightOperand.value;
         return value + "";
     }
 }
