@@ -1,8 +1,11 @@
 public class Node {
-    public Node(int i) {
+    private int value;
+
+    public Node(int value) {
+        this.value = value;
     }
 
     public int compute() {
-        return 1;
+        return value;
     }
 }
