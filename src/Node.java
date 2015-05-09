@@ -5,6 +5,9 @@ public class Node {
         this.value = value;
     }
 
+    public Node(String operator, Node leftOperand, Node rightOperand) {
+    }
+
     public int compute() {
         return value;
     }

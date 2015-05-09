@@ -8,4 +8,9 @@ public class CalculatorTest {
         assertEquals(1, new Node(1).compute());
         assertEquals(2, new Node(2).compute());
     }
+
+    @Test
+    public void computePlus() {
+        assertEquals(2, new Node("+", new Node(1), new Node(1)).compute());
+    }
 }
