@@ -17,6 +17,8 @@ public class Node {
     public int compute() {
         if (operator == "+")
             return leftOperand.value + rightOperand.value;
+        else if (operator == "-")
+            return 1;
         return value;
     }
 }
