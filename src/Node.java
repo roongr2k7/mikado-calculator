@@ -3,6 +3,6 @@ public class Node {
     }
 
     public int compute() {
-        return 0;
+        return 1;
     }
 }
