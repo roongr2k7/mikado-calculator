@@ -27,7 +27,12 @@ public class CalculatorTest {
     }
 
     @Test
-    public void stringEquation() {
+    public void stringPlusEquation() {
         assertEquals("1 + 1", new Node("+", new Node(1), new Node(1)).toString());
+    }
+
+    @Test
+    public void stringMinusEquation() {
+        assertEquals("1 - 1", new Node("-", new Node(1), new Node(1)).toString());
     }
 }
