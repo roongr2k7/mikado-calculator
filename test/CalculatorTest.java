@@ -20,4 +20,9 @@ public class CalculatorTest {
         assertEquals(1, new Node("-", new Node(2), new Node(1)).compute());
         assertEquals(2, new Node("-", new Node(3), new Node(1)).compute());
     }
+
+    @Test
+    public void stringValueNode() {
+        assertEquals("1", new Node(1).toString());
+    }
 }
