@@ -12,5 +12,6 @@ public class CalculatorTest {
     @Test
     public void computePlus() {
         assertEquals(2, new Node("+", new Node(1), new Node(1)).compute());
+        assertEquals(3, new Node("+", new Node(2), new Node(1)).compute());
     }
 }
