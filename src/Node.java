@@ -1,6 +1,8 @@
 public class Node {
     private int value;
     private String operator;
+    private Node leftOperand;
+    private Node rightOperand;
 
     public Node(int value) {
         this.value = value;
@@ -8,11 +10,13 @@ public class Node {
 
     public Node(String operator, Node leftOperand, Node rightOperand) {
         this.operator = operator;
+        this.leftOperand = leftOperand;
+        this.rightOperand = rightOperand;
     }
 
     public int compute() {
         if (operator == "+")
-            return 2;
+            return leftOperand.value + rightOperand.value;
         return value;
     }
 }
