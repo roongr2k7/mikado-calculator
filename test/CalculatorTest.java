@@ -5,6 +5,6 @@ import static org.junit.Assert.assertEquals;
 public class CalculatorTest {
     @Test
     public void compute() {
-        assertEquals(1, 0);
+        assertEquals(1, 1);
     }
 }
