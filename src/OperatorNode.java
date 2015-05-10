@@ -16,14 +16,14 @@ public class OperatorNode extends ValueNode {
             return leftOperand.value + rightOperand.value;
         else if (operator == "-")
             return leftOperand.value - rightOperand.value;
-        return computeValueNode();
+        throw new IllegalArgumentException();
     }
 
     @Override
     public String toString() {
         if (operator != null)
             return leftOperand.value + " " + operator + " " + rightOperand.value;
-        return toStringValueNode();
+        throw new IllegalArgumentException();
     }
 
 }
