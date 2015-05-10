@@ -1,19 +1,19 @@
 public class OperatorNode extends ValueNode {
     private String operator;
-    private OperatorNode leftOperand;
-    private OperatorNode rightOperand;
+    private ValueNode leftOperand;
+    private ValueNode rightOperand;
 
     private OperatorNode(int value) {
         this.value = value;
     }
 
-    public OperatorNode(String operator, OperatorNode leftOperand, OperatorNode rightOperand) {
+    public OperatorNode(String operator, ValueNode leftOperand, ValueNode rightOperand) {
         this.operator = operator;
         this.leftOperand = leftOperand;
         this.rightOperand = rightOperand;
     }
 
-    public static OperatorNode createValueNode(int value) {
+    public static ValueNode createValueNode(int value) {
         return new OperatorNode(value);
     }
 
