@@ -1,5 +1,4 @@
-public class OperatorNode implements Node {
-    private int value;
+public class OperatorNode extends ValueNode {
     private String operator;
     private OperatorNode leftOperand;
     private OperatorNode rightOperand;
@@ -27,10 +26,6 @@ public class OperatorNode implements Node {
         return computeValueNode();
     }
 
-    public int computeValueNode() {
-        return value;
-    }
-
     @Override
     public String toString() {
         if (operator != null)
@@ -38,7 +33,4 @@ public class OperatorNode implements Node {
         return toStringValueNode();
     }
 
-    public String toStringValueNode() {
-        return value + "";
-    }
 }
