@@ -10,10 +10,6 @@ public class OperatorNode extends ValueNode {
         this.rightOperand = rightOperand;
     }
 
-    public static ValueNode createValueNode(int value) {
-        return new ValueNode(value);
-    }
-
     @Override
     public int compute() {
         if (operator == "+")
