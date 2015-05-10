@@ -4,7 +4,7 @@ public class OperatorNode implements Node {
     private OperatorNode leftOperand;
     private OperatorNode rightOperand;
 
-    public OperatorNode(int value) {
+    private OperatorNode(int value) {
         this.value = value;
     }
 
@@ -12,6 +12,10 @@ public class OperatorNode implements Node {
         this.operator = operator;
         this.leftOperand = leftOperand;
         this.rightOperand = rightOperand;
+    }
+
+    public static OperatorNode createValueNode(int value) {
+        return new OperatorNode(value);
     }
 
     @Override
