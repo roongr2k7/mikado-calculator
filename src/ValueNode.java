@@ -1,15 +1,19 @@
-public abstract class ValueNode implements Node {
+public class ValueNode implements Node {
     protected int value;
 
     @Override
-    abstract int compute();
+    public int compute() {
+        return computeValueNode();
+    }
 
     public int computeValueNode() {
         return value;
     }
 
     @Override
-    abstract String toString();
+    public String toString() {
+        return toStringValueNode();
+    }
 
     public String toStringValueNode() {
         return value + "";
