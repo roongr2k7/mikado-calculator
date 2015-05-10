@@ -24,6 +24,10 @@ public class OperatorNode implements Node {
             return leftOperand.value + rightOperand.value;
         else if (operator == "-")
             return leftOperand.value - rightOperand.value;
+        return computeValueNode();
+    }
+
+    public int computeValueNode() {
         return value;
     }
 
@@ -31,6 +35,10 @@ public class OperatorNode implements Node {
     public String toString() {
         if (operator != null)
             return leftOperand.value + " " + operator + " " + rightOperand.value;
+        return toStringValueNode();
+    }
+
+    public String toStringValueNode() {
         return value + "";
     }
 }
