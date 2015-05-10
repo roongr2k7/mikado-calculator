@@ -3,9 +3,6 @@ public class OperatorNode extends ValueNode {
     private ValueNode leftOperand;
     private ValueNode rightOperand;
 
-    private OperatorNode(int value) {
-        this.value = value;
-    }
 
     public OperatorNode(String operator, ValueNode leftOperand, ValueNode rightOperand) {
         this.operator = operator;
@@ -14,7 +11,7 @@ public class OperatorNode extends ValueNode {
     }
 
     public static ValueNode createValueNode(int value) {
-        return new OperatorNode(value);
+        return new ValueNode(value);
     }
 
     @Override
