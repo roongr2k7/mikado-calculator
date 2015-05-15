@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class OperatorNode extends ValueNode {
     private String operator;
     private ValueNode leftOperand;
@@ -12,9 +14,9 @@ public class OperatorNode extends ValueNode {
 
     @Override
     public int compute() {
-        if (operator == "+")
+        if ("+".equals(operator))
             return leftOperand.value + rightOperand.value;
-        else if (operator == "-")
+        else if ("-".equals(operator))
             return leftOperand.value - rightOperand.value;
         throw new IllegalArgumentException();
     }
